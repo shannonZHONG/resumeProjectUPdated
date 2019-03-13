@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript 使用说明书</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./loading.css">
+    <script src="//at.alicdn.com/t/font_593099_e4osgl2m5ou07ldi.js"></script>
+
+    <style type="text/css">
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+
+        .site-welcome {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #888;
+            z-index: 1;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .site-welcome.active {
+            display: flex;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="siteWelcome" class="site-welcome active">
+        <div class="loading"></div>
+    </div>
+    <div id="topNavBar" class="topNavBar">
+        <div class="topNavBar-inner clearfix">
+
+
+            <a class="logo" href="#" alt="logo" style="float: left">
+                <span class="rs">RS</span>
+                <span class="Card">card</span>
+            </a>
+
+            <nav class="menu" style="float: right">
+                <ul class="clearfix">
+                    <li><a href="#siteAbout">关于</a></li>
+                    <li><a href="#siteSkills">技能</a></li>
+                    <li>
+                        <a href="#siteWorks">作品</a>
+                        <ul class="submenu">
+                            <li>作品1</li>
+                            <li>作品2</li>
+                            <li>作品3</li>
+                        </ul>
+
+
+                    </li>
+
+                    <li>
+                        <a href="#">博客</a>
+
+                        <ul class="submenu">
+                            <li>博客1</li>
+                            <li>博客2</li>
+                            <li>博客3</li>
+                        </ul>
+
+                    </li>
+
+                    <li><a href="#">日历</a></li>
+                    <li><a href="#">联系方式</a></li>
+                    <li><a href="#">其他</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="mask"></div>
+    </div>
+    <main>
+        <div id = "siteAbout" class="userCard">
+
+            <div class="pictureAndText clearfix">
+                <div class="picture">
+                    <img src="./img/avatar.jpg" width=299 height=347 alt="头像">
+                </div>
+                <div class="text">
+                    <div class="profile">
+                        <span class="welcome">Hello
+                            <span class="triangle"></span></span>
+                        <h1>JavaScript</h1>
+                        <p>使用说明书</p>
+                        <hr>
+                        <dl>
+                            <dt>年龄</dt>
+                            <dd>23</dd>
+                            <dt>所在城市</dt>
+                            <dd>地球</dd>
+                            <dt>邮箱</dt>
+                            <dd>JavaScript@gmail.com</dd>
+                            <dt>手机</dt>
+                            <dd>8008204100</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="media">
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-weibo1"></use>
+                    </svg>
+                </a>
+
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-icon"></use>
+                    </svg>
+                </a>
+
+
+            </footer>
+        </div>
+        <p class="downloadResume-wrapper">
+            <a class="downloadResume" href="./resume.pdf" target="_blank" download>下载 PDF 简历</a>
+        </p>
+
+        <p class="selfintroduction">
+            1996年出生<br> 经过十几年的成长 <br> 还没有完全成熟 现在已经到ES6<br> 什么？有没有ES10 我自己也不清楚<br>
+
+
+
+        </p>
+        <section id = "siteSkills" class="skills">
+            <h2>技能</h2>
+            <ol class="clearfix">
+                <li>
+                    <H3>
+                        HTML 5 & CSS 3
+                    </H3>
+                    <div class="progressBar">
+                        <div class="progress" style="width: 20%"></div>
+                    </div>
+                </li>
+                <li>
+                    <H3>
+                        JavaScript
+                    </H3>
+                    <div class="progressBar">
+                        <div class="progress" style="width:10%"></div>
+                    </div>
+                </li>
+                <li>
+                    <H3>
+                        JQuery
+                    </H3>
+                    <div class="progressBar">
+                        <div class="progress" style="width: 30%"></div>
+                    </div>
+                </li>
+                <li>
+                    <H3>
+                        Vue.js
+                    </H3>
+                    <div class="progressBar">
+                        <div class="progress" style="width:50%"></div>
+                    </div>
+                </li>
+                <li>
+                    <H3>
+                        React.js
+                    </H3>
+                    <div class="progressBar">
+                        <div class="progress" style="width:40%"></div>
+                    </div>
+                </li>
+                <li>
+                    <H3>
+                        Node.js
+                    </H3>
+                    <div class="progressBar">
+                        <div class="progress" style="width:20%"></div>
+                    </div>
+                </li>
+            </ol>
+        </section>
+        <section id= "siteWorks" class="portfolio">
+            <h2>作品集</h2>
+            <nav>
+                <ol class="clearfix">
+                    <li id="portfolio1">所有</li>
+                    <li id="portfolio2">框架</li>
+                    <li id="portfolio3">原生JS&amp;CSS</li>
+                </ol>
+                <div id="portfolioBar" class="bar ">
+                    <div class="bar-inner"></div>
+                </div>
+            </nav>
+
+            <script>
+                portfolio1.onclick = function() {
+                    portfolioBar.className = 'bar state-1'
+                }
+                portfolio2.onclick = function() {
+                    portfolioBar.className = 'bar state-2'
+                }
+                portfolio3.onclick = function() {
+                    portfolioBar.className = 'bar state-3'
+                }
+
+            </script>
+
+            <div class="works" style="height: 597px;">
+                <div class="big" style="top: 0; left: 0;">
+                    <img src="./1.jpg" alt="作品1">
+                </div>
+                <div class="small" style="top: 0; left: 645px;">
+                    <img src="./2.jpg" alt="作品2">
+                </div>
+                <div class="small" style="top: 312px; left: 645px;">
+                    <img src="./3.jpg" alt="作品3">
+                </div>
+            </div>
+
+        </section>
+        <script>
+            // js 只负责切换 具体怎么做 不管 
+            setTimeout(function() {
+                siteWelcome.classList.remove('active')
+            }, 1000)
+            window.onscroll = function(xxx) {
+                //console.log(xxx)  打印出来的都没有用 
+                // console.log(window.scrollY)  用户滑动鼠标 的 像素 
+                if (window.scrollY > 0) {
+                    topNavBar.classList.add('sticky')
+                } else {
+                    topNavBar.classList.remove('sticky')
+                }
+            }
+            //事件监听 
+            let liTags = document.querySelectorAll('nav.menu > ul > li')
+
+            for (let i = 0; i < liTags.length; i++) {
+                //  当鼠标移进来之后 
+                liTags[i].onmouseenter = function(x) {
+
+                    x.currentTarget.classList.add('active')
+                }
+
+                liTags[i].onmouseleave = function(x) {
+                    x.currentTarget.classList.remove('active')
+                }
+
+            }
+            
+            let aTags = document.querySelectorAll('nav.menu > ul > li > a')
+            //监听 onclick 事件 
+            for(let i = 0; i<aTags.length; i++){
+             aTags[i].onclick = function(x){
+             // 简易的方法 可以实现 滚动到指定元素 但是 效果不够完美 
+             // 所以 在引入 js 之前 就要阻止 之前的默认动作 是 a 🏷️ 带来的 
+              x.preventDefault();   
+             // how to have a  href without http ？
+             // getAttribute 
+             let a = x.currentTarget
+             // console.log( a.getAttribute('href') )
+             let href = a.getAttribute('href') // "siteAbout"
+             // 以href为key来找   element or div 
+             // the first step has done. 
+             let element = document.querySelector(href)
+             console.log(element)
+             // how to have  the hight of div ？
+                
+}
+            }
+            
+
+        </script>
+
+
+
+</body>
+
+
+</html>

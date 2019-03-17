@@ -103,7 +103,7 @@ outline: 10px solid red;
     position: relative;
 }
 
-.topNavBar nav > ul > li.active > a:hover::after {
+.topNavBar nav > ul > li.active > a::after {
     content: '';
     display: block;
     position: absolute;
